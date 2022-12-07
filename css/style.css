@@ -1,26 +1,40 @@
-main {
-    text-align: center;
-    color: #000;
-}
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
     font-size: 80px;
 }
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    width: 85%;
-    text-align: center;
-    margin: 30px auto;
+.nos{ 
+    width: 50%;
 }
-button {
-    background-color: blue;
-    transition: all .3s;
-    padding: 30px 90px;
-    cursor: pointer;
-    color: #fff;
+.table{
+    width: 75%;
 }
-button:hover {
-    background-color: green;
+
+
+
+
+@media screen and (max-width: 540px) {
+    h1{
+        font-size: 50px ;
+        font-weight: 500;
+    }
+    .nos{ 
+        width: 90%;
+    }
+    .table{
+        width: 90%;
+    }
+    th{
+        font-size: 10px;
+    }
+    td{
+        font-size: 14px;
+    }
+
+    td .btn{
+        --bs-btn-font-size: .7rem;
+        --bs-btn-padding-x: 0.65rem;
+    --bs-btn-padding-y: 0.275rem;
+    }
+
 }
